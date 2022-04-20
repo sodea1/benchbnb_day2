@@ -13,8 +13,6 @@ ActiveRecord::Base.connection.tables.each do |t|
   ActiveRecord::Base.connection.reset_pk_sequence!(t)
 end
 
-user1 = User.create!({username: 'Louis', password: 'password'})
-
 loc1 = Bench.create!({description: 'sf baby', lat: 37.77, lng: -122.49})
 loc2 = Bench.create!({description: 'fillmore street', lat: 37.81, lng: -122.42})
 loc3 = Bench.create!({description: 'ocean swims', lat: 37.77, lng: -122.52})
